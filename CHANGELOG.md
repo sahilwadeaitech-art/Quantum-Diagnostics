@@ -1,64 +1,40 @@
 # Changelog
 
-All notable changes to Quantum Diagnostics.
+## v1.2.0 (2025-01-12)
 
----
-
-## [1.2.0] - 2025-01-12
-
-### Added
-- SECURITY.md with dependency audit and reporting guidelines
-- Screenshot placeholders in assets/screenshots/
-- Repository topics and description metadata
-
-### Changed
-- Rebranded from "PC Health Diagnosis Tool" to "Quantum Diagnostics"
+- Renamed project to "Quantum Diagnostics" (was "PC Health Diagnosis Tool")
 - Updated sidebar branding and window title
-- README fully redesigned with feature table, architecture diagram, screenshot grid
-- Bumped version display across UI
+- Rewrote README properly
+- Added SECURITY.md
+- Fixed nav button alignment on smaller screens
+- Fixed footer padding issue in sidebar
 
-### Fixed
-- Sidebar nav button alignment on smaller resolutions
-- Footer label padding inconsistency
+## v1.1.0 (2024-12-28)
 
----
+- Added real-time network speed (download/upload delta calculation)
+- Battery card now shows estimated time remaining
+- Dashboard hero card shows CPU/RAM/Disk score breakdown chips
+- Report export includes storage partition details now
+- Tweaked health score weights (CPU 35%, RAM 35%, Disk 30%)
+- Performance panel refreshes every 2s instead of 5s
+- Cleanup panel shows file count before you confirm deletion
+- Fixed crash when psutil can't read certain partitions
+- Fixed network panel hanging with no internet
+- Fixed uptime going negative after sleep/hibernate
 
-## [1.1.0] - 2024-12-28
+## v1.0.0 (2024-12-15)
 
-### Added
-- Network speed delta calculation (shows real-time download/upload)
-- Battery time remaining estimate in dashboard
-- Score breakdown chips (CPU/RAM/Disk) on hero card
-- Export report now includes storage partition details
+Initial working version.
 
-### Changed
-- Improved health score weighting (CPU 35%, RAM 35%, Disk 30%)
-- Performance panel refresh interval reduced to 2s
-- Cleanup panel shows file count before deletion
-- Better error handling in speed test fallback
+- Dashboard with health score
+- System info panel (CPU, RAM, OS, storage)
+- Live performance monitoring
+- Temp file cleanup + recycle bin + browser cache
+- Network diagnostics (ping, connectivity, speed test)
+- CMD tools (ipconfig, systeminfo, tasklist, DNS flush)
+- Report export (.txt)
+- Dark mode UI with sidebar nav
 
-### Fixed
-- Crash when psutil can't access certain disk partitions
-- Network panel hanging when no internet connection
-- Uptime display showing negative values after sleep/hibernate
-
----
-
-## [1.0.0] - 2024-12-15
-
-### Added
-- System dashboard with weighted health score (Excellent/Good/Moderate/Poor)
-- Detailed hardware info panel (CPU, RAM, storage, OS)
-- Live performance monitoring with 2-second refresh
-- Temp file scanner and cleaner
-- Recycle bin and browser cache cleanup
-- Network diagnostics (connectivity check, ping, speed test)
-- CMD utilities (ipconfig, systeminfo, tasklist, flush DNS)
-- Export system report as .txt file
-- Dark mode UI with sidebar navigation
-- Custom theme system (src/ui/theme.py)
-
-### Known Issues
-- Speed test can be slow depending on network conditions
-- Some temp files may be locked by running processes
-- Recycle bin cleanup is Windows-only
+Known issues:
+- Speed test is slow/unreliable sometimes
+- Some temp files can't be deleted if they're locked by other processes

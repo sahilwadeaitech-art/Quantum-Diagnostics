@@ -1,6 +1,5 @@
 """
-Quantum Diagnostics — Entry Point
-Launches the desktop monitoring application.
+Entry point. Run this to launch the app.
 """
 
 import sys

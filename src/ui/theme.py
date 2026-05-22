@@ -1,57 +1,51 @@
 """
-Theme: Quantum Diagnostics
-A modern dark theme inspired by Windows 11 diagnostics, MSI Center,
-and professional system monitoring tools.
-
-All colors, fonts, spacing, and reusable component styles live here
-so the whole UI stays consistent.
+UI theme — colors, fonts, spacing, reusable styles.
+Keeping everything in one place so the whole app stays consistent.
 """
 
 
 # -- Color palette --
-# Deep carbon-black base with sapphire blue as primary accent.
-# Feels technical and trustworthy without going "hacker mode."
+# Dark base with blue accent. Tried a few combos, this one feels right.
 
 COLORS = {
-    # backgrounds (layered depth — deepest to surface)
-    "bg_base": "#050816",       # carbon black — app root
-    "bg_sidebar": "#0A0F1E",    # sidebar — slightly lighter
-    "bg_surface": "#111827",    # graphite blue — main content
-    "bg_card": "#1A2235",       # card / panel surface
-    "bg_card_hover": "#1F2A40", # card hover
-    "bg_input": "#0D1525",      # input fields, text areas
+    "bg_base": "#050816",
+    "bg_sidebar": "#0A0F1E",
+    "bg_surface": "#111827",       # main content area
+    "bg_card": "#1A2235",
+    "bg_card_hover": "#1F2A40",
+    "bg_input": "#0D1525",
 
-    # primary accent — neon sapphire
+    # accent
     "accent": "#3B82F6",
     "accent_hover": "#2563EB",
-    "accent_subtle": "#1E3A5F",  # nav active bg, subtle highlights
-    "accent_glow": "#3B82F6",    # status dots, glows
+    "accent_subtle": "#1E3A5F",    # nav active state
+    "accent_glow": "#3B82F6",
 
-    # secondary accent — tech violet
+    # secondary (barely used rn, might expand later)
     "secondary": "#8B5CF6",
     "secondary_hover": "#7C3AED",
 
-    # highlight — aqua pulse (for special indicators)
+    # for special indicators
     "highlight": "#22D3EE",
 
-    # text hierarchy
-    "text_primary": "#F8FAFC",   # ice white
-    "text_secondary": "#94A3B8", # slate frost
-    "text_muted": "#475569",     # quiet labels, footers
-    "text_accent": "#3B82F6",    # links, active text
+    # text
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#475569",
+    "text_accent": "#3B82F6",
 
-    # status colors
-    "success": "#22C55E",        # matrix green
-    "warning": "#F59E0B",        # signal amber
-    "danger": "#EF4444",         # critical red
-    "info": "#3B82F6",           # sapphire info
+    # status
+    "success": "#22C55E",
+    "warning": "#F59E0B",
+    "danger": "#EF4444",
+    "info": "#3B82F6",
 
-    # borders & dividers
-    "border": "#1E293B",         # card borders
-    "border_subtle": "#172033",  # very faint separators
+    # borders
+    "border": "#1E293B",
+    "border_subtle": "#172033",
     "divider": "#1E293B",
 
-    # progress bars
+    # progress
     "progress_bg": "#0F172A",
     "progress_fill": "#3B82F6",
 }

@@ -1,6 +1,5 @@
 """
-Main window — sidebar navigation + content panel layout.
-Uses the Quantum Diagnostics theme system for consistent styling.
+Main window — sidebar + content area.
 """
 
 import customtkinter as ctk

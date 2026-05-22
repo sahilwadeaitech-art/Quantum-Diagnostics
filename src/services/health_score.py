@@ -1,7 +1,7 @@
 """
-Calculates an overall "health score" for the PC.
-Basically just a weighted average of CPU/RAM/Disk usage inverted.
-Nothing fancy but gives a quick sense of how the system is doing.
+Health score calculator.
+Weighted average of CPU/RAM/Disk (inverted usage = score).
+Simple but gives a decent quick read on system state.
 """
 
 import psutil

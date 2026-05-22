@@ -1,6 +1,6 @@
 """
-Pulls system hardware and OS info using psutil + platform.
-Basically wraps everything into nice dicts for the UI to consume.
+System info — pulls hardware/OS data using psutil + platform.
+Returns dicts that the UI panels can display directly.
 """
 
 import os

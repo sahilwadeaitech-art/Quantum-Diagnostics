@@ -1,7 +1,6 @@
 """
-Dashboard panel — the main home screen.
-Shows health score prominently, quick resource stats, and system summary.
-Designed to feel like a modern diagnostics overview.
+Dashboard — main home screen.
+Health score, resource cards, system summary.
 """
 
 import customtkinter as ctk

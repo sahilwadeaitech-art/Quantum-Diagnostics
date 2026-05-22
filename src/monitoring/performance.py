@@ -1,6 +1,6 @@
 """
-Handles real-time performance data — CPU, RAM, disk, battery, network.
-Used by the performance panel to update metrics every couple seconds.
+Live performance data — CPU, RAM, disk, battery, network speed.
+Keeps previous network counters around for delta/speed calculation.
 """
 
 import psutil
